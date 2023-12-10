@@ -4,13 +4,20 @@
     padding: 10px;
     margin: 10px;
     text-align: center;
-  }
+}
   
-  .occupied {
+.occupied {
     background-color: #ff9999; /* Red background for occupied lockers */
-  }
-  
-  .vacant {
+}
+
+.vacant {
     background-color: #99ff99; /* Green background for vacant lockers */
-  }
+}
+
+.neutral {
+    background-color: #b2a8d1; /* Purple background for neutral lockers */
+}
   
+p {
+    text-align: center;
+}
