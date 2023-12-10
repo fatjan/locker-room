@@ -3,10 +3,11 @@ import React from 'react';
 import Locker from './Locker';
 import './LockerRoom.css';
 import { createLockerData } from '../helpers';
+import { simulator } from '../helpers/constants';
 
 const LockerRoom = () => {
-  // Dummy data for demonstration
-  const lockers = createLockerData(5*10);
+  const numLockers = simulator.NUMBER_OF_LOCKERS;
+  const lockers = createLockerData(numLockers);
 
   return (
     <div>

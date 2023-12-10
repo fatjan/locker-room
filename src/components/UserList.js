@@ -1,11 +1,16 @@
 // UserList.js
 import React, { useState } from 'react';
 import './UserList.css';
+import { simulator } from '../helpers/constants';
 
 const UserList = () => {
   const [users, setUsers] = useState([]);
+  const maxUsers = simulator.NUMBER_OF_USERS;
 
   const addUser = () => {
+    if (users.length >= maxUsers) {
+      return;
+    }
     const newUserId = users.length + 1;
     setUsers([...users, { id: newUserId, name: `User ${newUserId}` }]);
   };
