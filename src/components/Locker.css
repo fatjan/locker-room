@@ -1,0 +1,16 @@
+/* Locker.css */
+.locker {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .occupied {
+    background-color: #ff9999; /* Red background for occupied lockers */
+  }
+  
+  .vacant {
+    background-color: #99ff99; /* Green background for vacant lockers */
+  }
+  

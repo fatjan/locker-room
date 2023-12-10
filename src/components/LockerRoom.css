@@ -1,0 +1,6 @@
+/* LockerRoom.css */
+.locker-room-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns with equal width */
+    gap: 10px; /* Gap between grid items */
+}  
