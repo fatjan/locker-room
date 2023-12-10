@@ -3,7 +3,7 @@
     display: block;
     width: 100%;
     padding: 8px;
-    background-color: #3498db;
+    background-color: #db34c8;
     color: #fff;
     border: none;
     text-align: left;
@@ -13,7 +13,7 @@
   }
   
   .user-button:hover {
-    background-color: #2980b9;
+    background-color: #b92960;
   }
   
   .user-list-panel {
