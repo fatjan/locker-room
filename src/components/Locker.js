@@ -1,12 +1,13 @@
 // Locker.js
-import React from 'react';
-import './Locker.css'; // You can create a separate CSS file for styling if needed
+import React, { useState } from 'react';
+import './Locker.css'; 
 
 const Locker = ({ id, occupied }) => {
+  const [isShown, setIsShown] = useState(false);
+  const lockerStatus = isShown ? (occupied ? 'occupied' : 'vacant') : 'neutral';
   return (
-    <div className={`locker ${occupied ? 'occupied' : 'vacant'}`}>
+    <div className={`locker ${lockerStatus}`} onMouseEnter={() => setIsShown(true)} onMouseLeave={() => setIsShown(false)}>
       <p>{`Locker ${id}`}</p>
-      {occupied ? <p>Occupied</p> : <p>Vacant</p>}
     </div>
   );
 };
