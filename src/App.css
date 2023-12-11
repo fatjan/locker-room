@@ -1,0 +1,8 @@
+/* App.css */
+.App {
+  display: grid;
+  grid-template-columns: 10% 90%; /* 10% for the left, 90% for the right */
+  height: 100vh; /* 100% of the viewport height */
+}
+
+/* Add styling for the UserList and LockerRoom components if needed */
