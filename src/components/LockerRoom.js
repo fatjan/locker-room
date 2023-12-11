@@ -1,4 +1,3 @@
-// LockerRoom.js
 import React from 'react';
 import Locker from './Locker';
 import './LockerRoom.css';
